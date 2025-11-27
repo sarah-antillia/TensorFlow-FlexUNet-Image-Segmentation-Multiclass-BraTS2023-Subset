@@ -119,20 +119,20 @@ The folder structure of BRATS2023_TASK_1 is the following.<br>
 <pre>
 ./BRATS2023_TASK_1
   ├─BraTS-GLI-00000-000
-  │  ├─BraTS-GLI-00000-000-seg,nii
-  │  ├─BraTS-GLI-00000-000-t1c,nii
-  │  ├─BraTS-GLI-00000-000-t1n,nii
-  │  ├─BraTS-GLI-00000-000-t2f,nii
-  │  └─BraTS-GLI-00000-000-t2w,nii
+  │  ├─BraTS-GLI-00000-000-seg.nii
+  │  ├─BraTS-GLI-00000-000-t1c.nii
+  │  ├─BraTS-GLI-00000-000-t1n.nii
+  │  ├─BraTS-GLI-00000-000-t2f.nii
+  │  └─BraTS-GLI-00000-000-t2w.nii
 ...
   ├─BraTS-GLI-00002-000
 ...
   └─BraTS-GLI-00739-000
-      ├─BraTS-GLI-00739-000-seg,nii
-      ├─BraTS-GLI-00739-000-t1c,nii
-      ├─BraTS-GLI-00739-000-t1n,nii
-      ├─BraTS-GLI-00739-000-t2f,nii
-      └─BraTS-GLI-00739-000-t2w,nii
+      ├─BraTS-GLI-00739-000-seg.nii
+      ├─BraTS-GLI-00739-000-t1c.nii
+      ├─BraTS-GLI-00739-000-t1n.nii
+      ├─BraTS-GLI-00739-000-t2f.nii
+      └─BraTS-GLI-00739-000-t2w.nii
 </pre>
 We used <b>*_seg.nii</b> and <b>*_t2f.nii</b> files under 
 <b>./BRATS2023_TASK_1/BraTS-GLI-*/</b> folders to generate our PNG dataset.<br>
@@ -145,8 +145,8 @@ We used the following two Python scripts to generate the dataset with colorized 
 <li><a href="./generator/split_master.py">split_master.py</a></li>
 </ul>
 We excluded all empty black masks and their corresponding images to generate our PNG dataset,
-which were irrelevant to train our segmentation model, resized all images and masks to 256x256 pixels.
-and used the following category and color mapping table to generate the colorized masks.
+which were irrelevant to train our segmentation model, and resized all images and masks to 256x256 pixels.
+We also used the following category and color mapping table to generate the colorized masks.
 <br>
 <br>
 <table border="1" style="border-collapse: collapse;">
